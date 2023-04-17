@@ -1,0 +1,199 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Comic Neue", cursive;
+  font-size: 1.6rem;
+  background-color: #e9d8a6;
+  margin: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.wrapper > * {
+  flex: 1 100%;
+}
+
+.header {
+  background-color: #ae2012;
+  font-size: 3.4rem;
+  padding: 1rem;
+  text-align: center;
+}
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+button {
+  flex: 1 100%;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid rgb(112, 112, 112);
+  font-size: 1.6rem;
+  letter-spacing: 0.4rem;
+  transition: 0.4s;
+}
+
+.button-one {
+  color: #ae2012;
+}
+.button-one:hover {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #efefef;
+  background-color: #ae2012;
+}
+.button-two {
+  color: #06d6a0;
+}
+.button-two:hover {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #efefef;
+  background-color: #06d6a0;
+}
+.button-three {
+  color: #0a9396;
+}
+.button-three:hover {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #efefef;
+  background-color: #0a9396;
+}
+
+.button-four {
+  color: #ca6702;
+}
+
+.button-four:hover {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #efefef;
+  background-color: #ca6702;
+}
+.button-five {
+  color: #38b000;
+}
+.button-five:hover {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #efefef;
+  background-color: #38b000;
+}
+
+.button-six {
+  color: #f15bb5;
+}
+
+.button-six:hover {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #efefef;
+  background-color: #f15bb5;
+}
+
+.main {
+  background-color: #0a9396;
+  font-size: 2rem;
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.aside {
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.aside1 {
+  background-color: #38b000;
+}
+
+.aside2 {
+  background-color: #ca6702;
+}
+
+.some {
+  padding-block-end: 1rem;
+  margin: 1rem -1rem -1rem -1rem;
+}
+.some > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f15bb5;
+}
+.some > ul > li {
+  flex: 1 0;
+}
+
+.facebook {
+  padding: 0.3rem;
+  text-align: center;
+  color: white;
+  background-color: #4267b2;
+}
+
+.twitter {
+  padding: 0.3rem;
+  text-align: center;
+  color: white;
+  background-color: #1da1f2;
+}
+.email {
+  padding: 0.3rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: #929292;
+}
+
+.footer {
+  font-size: 2rem;
+  background-color: #06d6a0;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 426px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .aside1 {
+    flex: 1 0;
+  }
+  .aside2 {
+    flex: 1 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .aside1 {
+    order: 1;
+    flex: 1 0;
+  }
+  .main {
+    order: 2;
+    flex: 4 0;
+  }
+  .aside2 {
+    order: 3;
+    flex: 1 0;
+  }
+  .some {
+    order: 4;
+  }
+  footer {
+    order: 5;
+  }
+}
